@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Details</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="hbnb logo">
+        <nav>
+            <a href="login.html" id="login-link">Login</a>
+        </nav>
+    </header>
+    <main>
+        <h1 id="place-name"> Place Name</h1>  
+            <div class="info-card">
+                <p class="host">Host:</p>
+                <p class="price per night: 150">Price per night:</p>
+                <p class="location:">Location:</p>
+                <p class="descripion:">Description:</p>
+                <p class="amenities:">Amenities:</p>
+            </div>
+        <ul class="row"></ul>
+            <h2 id="review-title">Reviews</h2>
+            <li class="list">
+                <div class="rating-card">
+                    <p class="people">User:</p>
+                    <p class="comment">Commnet:</p>
+                    <p>Rating
+                        </p>
+                        </div>
+                </div>
+            </li> 
+            <li class="list">
+                <div class="rating-card">
+                    <p class="people">User:</p>
+                    <p class="comment">Commnet:</p>
+                    <p>Rating
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span> 
+                </p>
+                </div>
+            </li>
+                
+            <!-- Reviews will be populated dynamically -->
+        </section>
+        <section id="add-review">
+            <h2 id="review-add">Add a Review</h2>
+            <form id="review-form">
+                <label for="review-text">Your Review:</label>
+                <textarea id="review-text" name="review-text" required></textarea>
+                <label for="ratin-text">Rating</label>
+                <input type="radio" name="star" id="star1"><label for="star1">
+                </label>
+                <input type="radio" name="star" id="star2"><label for="star2">
+                </label>
+                <input type="radio" name="star" id="star3"><label for="star3">
+                </label>
+                <input type="radio" name="star" id="star4"><label for="star4">
+                </label>
+                <input type="radio" name="star" id="star5"><label for="star5">
+                </label>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+    <footer>
+        <p>&copy; 2024 HBNB Evolution All rights reserved.</p>  
+    </footer>
+</body>
+</html>
